@@ -25,7 +25,7 @@ export default function Home() {
         </div>
         {/* ============ Banner-Bottom End here ======= */}
         {/* ============ Post Part Start here ========= */}
-        <div className="max-w-7xl mx-auto py-20">Posts will go here</div>
+        <div className="max-w-7xl mx-auto py-20 px-4">Posts will go here</div>
         {/* ============ Post Part End here =========== */}
         {/* ============ Footer Start here============= */}
         <Footer />

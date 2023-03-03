@@ -10,7 +10,7 @@ function SampleNextArrow(props: any) {
   const { onClick } = props;
   return (
     <div
-      className="w-44 h-8 absolute bottom-32 z-30 right-10 border-[1px] border-gray-900 px-2 hover:border-gray-800 overflow-hidden"
+      className="w-44 h-8 absolute bottom-32 z-30 right-10 border-[1px] border-gray-900 px-2 hover:border-gray-800 bg-black/50 hover:bg-black shadow-btnShadow overflow-hidden"
       onClick={onClick}
     >
       <div className="w-full h-full text-gray-300 text-sm uppercase relative flex items-center justify-end cursor-pointer group  ">
@@ -32,7 +32,7 @@ function SamplePrevArrow(props: any) {
   const { onClick } = props;
   return (
     <div
-      className="w-44 h-8 absolute bottom-32 z-30 left-10 border-[1px] border-gray-900 px-2 hover:border-gray-800 overflow-hidden"
+      className="w-44 h-8 absolute bottom-32 z-30 left-10 border-[1px] border-gray-900 px-2 hover:border-gray-800 bg-black/50 hover:bg-black shadow-btnShadow overflow-hidden"
       onClick={onClick}
     >
       <div className="w-full h-full text-gray-300 text-sm uppercase relative flex items-center justify-between cursor-pointer group  ">
@@ -61,11 +61,11 @@ const Banner = () => {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className="w-full h-[650px] relative">
+    <div className="w-full h-auto md:h-[650px] relative">
       <Slider {...settings}>
         <div>
           <Image
-            className="w-full h-[650px] object-cover"
+            className="w-full h-auto md:h-[650px] object-cover"
             src={bannerImgOne}
             loading={"eager"}
             alt="bannerImgOne"
@@ -73,7 +73,7 @@ const Banner = () => {
         </div>
         <div>
           <Image
-            className="w-full h-[650px] object-cover"
+            className="w-full h-auto md:h-[650px] object-cover"
             src={bannerImgTwo}
             loading={"lazy"}
             alt="bannerImgTwo"
@@ -81,7 +81,7 @@ const Banner = () => {
         </div>
         <div>
           <Image
-            className="w-full h-[650px] object-cover"
+            className="w-full h-auto md:h-[650px] object-cover"
             src={bannerImgThree}
             loading={"lazy"}
             alt="bannerImgThree"
@@ -89,7 +89,7 @@ const Banner = () => {
         </div>
         <div>
           <Image
-            className="w-full h-[650px] object-cover"
+            className="w-full h-auto md:h-[650px] object-cover"
             src={bannerImgFour}
             loading={"lazy"}
             alt="bannerImgFour"
