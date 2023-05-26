@@ -6,4 +6,12 @@
   .headerLi {
     @apply text-primaryColor hover:text-secondaryColor cursor-pointer duration-300;
   }
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .custom-img {
+    background-image: url("https://pbs.twimg.com/media/FvsS90FXgAAHQtu?format=jpg&name=small");
+  }
 }
